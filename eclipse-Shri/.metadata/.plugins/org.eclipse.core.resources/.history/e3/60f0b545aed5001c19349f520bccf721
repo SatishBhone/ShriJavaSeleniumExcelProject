@@ -1,0 +1,15 @@
+package constructor;
+
+public class Construct1 {
+     String name;
+     int a;
+     char div;
+	public Construct1 () {
+	System.out.println("shrikant");
+	}
+	public static void main(String[] args) {
+		Construct1 ref=new Construct1 ();
+
+	}
+
+}

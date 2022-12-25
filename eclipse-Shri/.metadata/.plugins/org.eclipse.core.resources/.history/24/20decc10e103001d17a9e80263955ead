@@ -1,0 +1,33 @@
+package test2;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class TestClass1 {
+	
+	@Test
+	public void testGoogle() {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.google.com/");
+	    WebElement searchElement=  driver.findElement(By.name("q"));
+	    searchElement.sendKeys("HYR Tutorials");
+	    searchElement.sendKeys(Keys.ENTER);
+	    String expectedTitle="HYR Tutorials - Google Search";
+	    String actualTitle=driver.getTitle();
+	    Assert.
+		
+	}
+
+}

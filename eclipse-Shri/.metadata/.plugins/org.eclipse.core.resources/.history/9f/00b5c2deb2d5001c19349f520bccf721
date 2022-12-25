@@ -1,0 +1,28 @@
+package constructor;
+
+public class Construct1 {
+     String name;
+     int rollno;
+     char div;
+	public Construct1 (String name,int a,char b) {
+		this(10);
+		this.name=name;
+		this.rollno=a;
+		this.div=b;
+	System.out.println("shrikant");
+	System.out.println(name);
+	System.out.println(name+" "+rollno+" "+div);
+	}
+	Construct1 (int a){
+		System.out.println("my name is shrikant");
+		System.out.println(a);
+	}
+	Construct1 (){
+		System.out.println("all is well");
+	}
+	public static void main(String[] args) {
+		Construct1 ref=new Construct1 ("sachin",10,'a');
+
+	}
+
+}

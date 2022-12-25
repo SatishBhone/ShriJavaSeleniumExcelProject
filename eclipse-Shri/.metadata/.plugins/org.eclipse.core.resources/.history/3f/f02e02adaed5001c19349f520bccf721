@@ -1,0 +1,20 @@
+package constructor;
+
+public class Construct1 {
+     String name;
+     int a;
+     char div;
+	public Construct1 (String name,int a,char b) {
+		this.name=name;
+		this.a=a;
+		this.div=b;
+	System.out.println("shrikant");
+	System.out.println(name);
+	System.out.println(a);
+	}
+	public static void main(String[] args) {
+		Construct1 ref=new Construct1 ("sachin",10,'a');
+
+	}
+
+}

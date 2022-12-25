@@ -1,0 +1,5 @@
+package com.org.qa.testcases;
+
+public class LoginPageTest {
+
+}

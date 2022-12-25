@@ -1,0 +1,35 @@
+package com.org.qa.testcases;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.org.qa.baseClass.TestBase;
+import com.org.qa.pages.LoginPage;
+
+public class LoginPageTest extends TestBase {
+	
+	LoginPage lPage;
+	@BeforeMethod
+	public void setup() {
+		initilization();
+		 lPage=new LoginPage();
+		
+	}
+	@Test
+	public void loginPageTitleTest() {
+		String title=lPage.validateLoginPageTitle();
+		Assert.assertEquals(title, "Free CRM software for customer relationship management, sales, marketing campaigns and support.");
+	}
+	
+	
+	
+	
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	}
+
+}

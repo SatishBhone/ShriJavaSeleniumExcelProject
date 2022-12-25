@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Conditional statement&apos;" deleteContents="false" description="Delete resource &apos;Conditional statement&apos;" element1="/Conditional statement" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1651555883121"/>
+</session>
